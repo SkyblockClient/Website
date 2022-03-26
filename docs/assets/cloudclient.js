@@ -66,7 +66,7 @@ Promise.all([
             ${
               item.guide
                 ? `<a href="${item.guide}" target="_blank">
-                  <img src="/assets/info.svg" class="inline-block max-h-4">
+                  <img src="../assets/info.svg" class="inline-block max-h-4">
                 </a>`
                 : ""
             }
