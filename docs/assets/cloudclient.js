@@ -242,7 +242,7 @@ const cachedAssets = [
   "DUNGEONS_TEXTURE_PACK_V1.2.zip",
   "CustomMainMenu-MC1.8.9-2.0.jar",
   "dungeonsguide-3.7.7.jar",
-  "CrashPatch-1.3.4.jar",
+  "CrashPatch-1.3.6.jar",
   "Cowlection-1.8.9-0.14.0.jar",
   "OofMod-4.1.0.jar",
   "kios-hsb-pack.zip",
@@ -279,7 +279,7 @@ const cachedAssets = [
 ];
 const downloadFile = async (url, fallbackName) => {
   if (cachedAssets.includes(fallbackName)) {
-    const response = await fetch("assetcache/" + fallbackName);
+    const response = await fetch("../assetcache/" + fallbackName);
     const data = await response.arrayBuffer();
     return data;
   }
