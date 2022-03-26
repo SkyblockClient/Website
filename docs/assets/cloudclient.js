@@ -361,29 +361,35 @@ const install = async () => {
       return document.querySelector(`[data-id="${pack.id}"]`).checked;
     })
     .map((pack) => ({ url: pack.downloadLink, name: pack.downloadAs }));
-  // Download and install the mods
-  const modTasks = modList.map(async (mod) => {
-    logToProgressLog(`Downloading **${mod.name}**`);
-    const modFile = await downloadFile(mod.url, mod.name);
-    await writeFile(modBase + mod.name, modFile);
+  // Download and install the assets
+  const allTasks = [];
+  modList.forEach((mod) => {
+    allTasks.push(async () => {
+      logToProgressLog(`Downloading **${mod.name}**`);
+      const modFile = await downloadFile(mod.url, mod.name);
+      await writeFile(modBase + mod.name, modFile);
+    });
     if (mod.extras) {
       for (const { path, hostPath } of mod.extras) {
-        console.log(path, hostPath);
-        const fileContent = await downloadFile(
-          "https://raw.githubusercontent.com/nacrt/SkyblockClient-REPO/main/files/" +
-            hostPath
-        );
-        await writeFile(configBase + path, fileContent);
+        allTasks.push(async () => {
+          logToProgressLog(`Downloading ${path}`);
+          const fileContent = await downloadFile(
+            "https://raw.githubusercontent.com/nacrt/SkyblockClient-REPO/main/files/" +
+              hostPath
+          );
+          await writeFile(configBase + path, fileContent);
+        });
       }
     }
   });
-  // Download and install the packs
-  const packTasks = packList.map(async (pack) => {
-    logToProgressLog(`Downloading **${pack.name}**`);
-    const packFile = await downloadFile(pack.url, pack.name);
-    await writeFile(packBase + pack.name, packFile);
+  packList.forEach((pack) => {
+    allTasks.push(async () => {
+      logToProgressLog(`Downloading **${pack.name}**`);
+      const packFile = await downloadFile(pack.url, pack.name);
+      await writeFile(packBase + pack.name, packFile);
+    });
   });
-  await Promise.all(modTasks);
+  await Promise.all(allTasks.map((task) => task()));
   // Finish up
   confetti({
     particleCount: 300,
