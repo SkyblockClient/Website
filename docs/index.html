@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/gen.css" />
+    <link rel="icon" type="image/png" href="assets/Skyclient.png" />
+    <title>Skyclient</title>
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <img
+      src="assets/layered-waves-haikei.svg"
+      class="absolute left-0 right-0 top-0 bottom-0 w-full -z-10"
+      alt=""
+    />
+    <h1
+      class="text-3xl md:text-6xl lg:text-9xl text-center font-bold my-8 h-[14vw] xl:my-20 xl:h-[10vw]"
+    >
+      Skyclient
+    </h1>
+    <p class="text-center">
+      <img class="inline-block max-h-16" src="assets/Skyclient.png" />
+      An open installer to help you get all of the assets you need for Hypixel.
+    </p>
+    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10">
+      Downloads
+    </h2>
+    <!-- Present the options
+    - Windows (by @nacrt, use assets/skyclient-windows.png, made with C#)
+    - Web (by @KTibow, use assets/skyclient-web.png, made with modern web APIs)
+    - Universal (by @koxx12-dev, use assets/skyclient-linux.png, made with Java)
+    -->
+    <div class="flex flex-col lg:flex-row">
+      <template-example element-name="download-option">
+        <div
+          class="flex flex-1 flex-col items-center p-4 m-4 bg-zinc-800 hover:bg-slate-800 transition-all cursor-pointer"
+          onclick="window.open('{{url}}')"
+        >
+          <h2 class="text-center font-bold text-2xl my-8">{{name}}</h2>
+          <img src="{{image}}" />
+          <div class="flex flex-wrap justify-center mt-auto">
+            {{#chips}}
+            <div class="inline-block bg-zinc-700 rounded-3xl py-2 px-4 m-2">{{.}}</div>
+            {{/chips}}
+          </div>
+        </div>
+      </template-example>
+      <download-option
+        name="Windows"
+        image="assets/skyclient-windows.png"
+        url="https://github.com/SkyblockClient/SkyblockClient/releases/latest"
+        chips-array-0="Made by @nacrt"
+        chips-array-1="Made with C#"
+        chips-array-2="Requires Windows"
+      ></download-option>
+      <download-option
+        name="Web"
+        image="assets/skyclient-web.png"
+        url="/cloudclient/"
+        chips-array-0="Made by @KTibow"
+        chips-array-1="Made with modern web APIs"
+        chips-array-2="Requires a modern browser"
+      ></download-option>
+      <download-option
+        name="Universal"
+        image="assets/skyclient-linux.png"
+        url="https://github.com/SkyblockClient/Skyclient-installer-Java/releases/latest"
+        chips-array-0="Made by @koxx12-dev"
+        chips-array-1="Made with Java"
+        chips-array-2="Requires Java"
+      ></download-option>
+    </div>
+    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-32">Steps</h2>
+    <!-- Fancy ordered list
+    - Choose a option and download it
+    - Run it
+    - Choose the mods/texture packs you want
+    - Skyclient downloads them
+    - Skyclient sets up your .minecraft folder
+    -->
+    <ul
+      class="text-center flex flex-col lg:flex-row flex-wrap justify-center md:text-xl"
+    >
+      <template-example element-name="step-item">
+        <li class="inline-block bg-zinc-800 rounded-md p-2 m-2">
+          <span class="inline-block text-2xl font-bold p-2">{{i}}</span>
+          <span class="inline-block bg-zinc-700 rounded-md text-2xl font-bold p-2">
+            {{name}}
+          </span>
+        </li>
+      </template-example>
+      <step-item i="1" name="Choose a option and download it"></step-item>
+      <step-item i="2" name="Run Skyclient"></step-item>
+      <step-item i="3" name="Choose the mods/texture packs you want"></step-item>
+      <span class="basis-full h-10"></span>
+      <step-item i="4" name="Skyclient downloads what you chose"></step-item>
+      <step-item i="5" name="Skyclient sets up your .minecraft folder"></step-item>
+    </ul>
+    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-32">Open</h2>
+    <!-- State the ways that Skyclient is open
+    - Open source
+    - Open community
+    - Open to modify once installed
+    -->
+    <ul class="text-center flex flex-col lg:flex-row justify-center md:text-xl">
+      <template-example element-name="open-item">
+        <li class="inline-block flex-1 bg-zinc-800 rounded-md p-2 m-2">
+          <span
+            class="inline-block mx-auto bg-zinc-700 rounded-md text-2xl font-bold p-2"
+          >
+            {{name}}
+          </span>
+          <p class="block text-xl font-bold p-2">{{description}}</p>
+        </li>
+      </template-example>
+      <open-item
+        name="Open source"
+        description="All of Skyclient is open source (except the Discord bot), either at github.com/SkyblockClient or somewhere at github.com/nacrt."
+      ></open-item>
+      <open-item
+        name="Open community"
+        description="Skyclient has a open Discord server. You can join it at inv.wtf/skyclient."
+      ></open-item>
+      <open-item
+        i="3"
+        name="Open to modify once installed"
+        description="At the end of the day, Skyclient just grabs misc assets, and adds them to a Forge installation. You can add or remove stuff as much as you want."
+      ></open-item>
+    </ul>
+    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-32">
+      Skyclient vs others
+    </h2>
+    <!--
+      Present the other competitors
+      - Vanilla
+      - Forge
+      - Lunar
+      - Badlion
+      - Feather
+    -->
+    <div class="flex flex-col lg:flex-row">
+      <template-example element-name="competitor-option">
+        <div class="flex flex-1 flex-col items-center bg-zinc-800 p-4 m-4">
+          <h2 class="text-center font-bold text-2xl my-8">
+            <img src="{{image}}" class="inline-block max-h-16" />
+            {{name}}
+          </h2>
+          <ul class="flex flex-wrap justify-center mt-auto">
+            {{#reasons}}
+            <li class="inline-block bg-zinc-700 rounded-3xl py-2 px-4 m-2">{{.}}</li>
+            {{/reasons}}
+          </ul>
+        </div>
+      </template-example>
+      <competitor-option
+        name="Vanilla"
+        image="assets/competitor-vanilla.png"
+        reasons-array-0="Vanilla has low FPS"
+        reasons-array-1="Vanilla has no mod support"
+      ></competitor-option>
+      <competitor-option
+        name="Lunar"
+        image="assets/competitor-lunar.png"
+        reasons-array-0="Lunar is bad for Skyblock"
+        reasons-array-1="Lunar is for-profit"
+        reasons-array-2="You can only use Lunar's own mods"
+      ></competitor-option>
+      <competitor-option
+        name="Badlion"
+        image="assets/competitor-badlion.png"
+        reasons-array-0="You can only use Badlion's own mods"
+        reasons-array-1="Badlion steals ideas from independent mods"
+        reasons-array-2="Badlion is for-profit"
+      ></competitor-option>
+      <competitor-option
+        name="Feather"
+        image="assets/competitor-feather.png"
+        reasons-array-0="Feather costs money"
+        reasons-array-1="Feather broke licenses by stealing mods"
+        reasons-array-2="Feather's community is... weird"
+      ></competitor-option>
+    </div>
+    <h2
+      class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10"
+      id="credits"
+    >
+      Credits
+    </h2>
+    <p class="text-center text-xl font-bold my-10">
+      Skyclient has used the work of many, many people.
+    </p>
+    <ul class="list-disc text-center">
+      <li>
+        Many icons on this page by
+        <a
+          target="_blank"
+          class="text-slate-500 hover:text-slate-400"
+          href="https://icons8.com"
+        >
+          Icons8
+        </a>
+      </li>
+      <li>Many independent mod developers</li>
+      <li>The Discord community (inv.wtf/skyclient)</li>
+      <li>People who've worked on Skyclient</li>
+    </ul>
+    <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+    <script src="example.js"></script>
+  </body>
+</html>

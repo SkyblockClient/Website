@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/gen.css" />
+    <meta property="og:title" content="Cloudclient" />
+    <meta
+      property="og:description"
+      content="All the power of the Skyclient asset installer for Hypixel, but in your web browser."
+    />
+    <meta property="og:image" content="/assets/Cloudclient.png" />
+    <link rel="icon" type="image/png" href="/assets/Cloudclient.png" />
+    <meta name="theme-color" content="#94a3b8" />
+    <title>Cloudclient</title>
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <img
+      src="/assets/wave-haikei.svg"
+      class="absolute left-0 right-0 top-0 bottom-0 w-full -z-10"
+      alt=""
+    />
+    <h1
+      class="text-xl md:text-6xl text-center font-bold my-8 h-[14vw] xl:my-20 xl:h-[10vw]"
+    >
+      <a href="https://inv.wtf/skyclient" class="hover:underline hover:text-slate-400">
+        Cloudclient
+      </a>
+    </h1>
+    <main class="max-w-[100ch] mx-auto relative accent-slate-400">
+      <div id="loadingScreen" class="p-8 hidden">
+        <h2 class="text-xl md:text-2xl text-center my-[4vw]">Loading</h2>
+        <div class="bg-zinc-500 w-16 h-16 md:w-32 md:h-32 mx-auto animate-ping"></div>
+        <div
+          class="bg-zinc-500 w-16 h-16 md:w-32 md:h-32 mx-auto relative bottom-16 md:bottom-32"
+        ></div>
+      </div>
+      <div id="configScreen" class="p-8 hidden">
+        <p>
+          Skyclient installs things like mods and texture packs for a Minecraft profile
+          (designed for the Hypixel server).
+        </p>
+        <p>
+          Cloudclient is a version of Skyclient, accessible online (hence the Cloud).
+        </p>
+        <p id="unsupportedWarning" class="bg-yellow-600 bg-opacity-50 p-2 m-2">
+          Your browser doesn't have any way to access directories. This means
+          Cloudclient can't write to your profile. Try again with Chrome/Edge, or any
+          Chromium-based browser.
+        </p>
+        <br />
+
+        <p>So, how would you like to customize your setup?</p>
+        <h2 class="text-xl md:text-2xl font-bold my-4">Mods</h2>
+        <ul id="modSpace"></ul>
+        <h2 class="text-xl md:text-2xl font-bold my-4">Texture Packs</h2>
+        <ul id="packSpace"></ul>
+        <p>
+          <i>
+            Try hovering over a mod or texture pack to see the extended description.
+          </i>
+        </p>
+        <h2 class="text-xl md:text-2xl font-bold my-4">Installing</h2>
+        <p>What launcher would you like to install for?</p>
+        <p>
+          <label>
+            <input type="radio" name="installType" id="vanillaRadio" checked />
+            Vanilla
+          </label>
+          <label>
+            <input type="radio" name="installType" id="multimcRadio" />
+            MultiMC style (manual)
+          </label>
+        </p>
+        <div id="launcherInfo" class="m-4 p-4 bg-zinc-800 hidden">
+          <h2 class="text-xl md:text-2xl font-bold my-4">MultiMC Prep</h2>
+          <p>If you use MultiMC, first you need to create an instance for Skyclient.</p>
+          <ol class="list-decimal list-inside">
+            <li>Click the "Add Instance" button</li>
+            <li>Name the instance Skyclient and add it to a group if you want</li>
+            <li>Set the Minecraft version to 1.8.9</li>
+            <li>
+              Set the icon to the Skyclient logo
+              <a download href="/assets/Skyclient.png" class="text-slate-500">
+                (click to download)
+              </a>
+            </li>
+            <li>Select the instance and click "Edit Instance"</li>
+            <li>Click "Add Forge"</li>
+          </ol>
+          <p>
+            Then, when you upload your .minecraft folder, choose the one you find from
+            the "Open .minecraft" button.
+          </p>
+        </div>
+        <br />
+        <p>
+          Now you need to let Cloudclient add mods, texture packs, and config to your
+          .minecraft folder. You'll need to find it and put it here.
+        </p>
+        <div
+          id="dropSpace"
+          class="bg-zinc-700 m-8 p-32 flex justify-center items-center text-center cursor-pointer"
+        >
+          Drop here
+          <br />
+          Or click to browse
+        </div>
+      </div>
+      <div id="warningScreen" class="p-8 hidden">
+        <p>
+          By continuing, you agree to let Cloudclient modify your .minecraft folder, and
+          acknowledge that it may overwrite existing mods, texture packs, or
+          configuration. We are not liable if something goes wrong.
+        </p>
+        <p>
+          Taking a backup is highly recommended. You can always close this tab or reload
+          the page.
+        </p>
+        <p>
+          Consider removing existing mods/texture packs/config in the directory you
+          chose.
+        </p>
+        <button id="installButton" class="bg-zinc-700 p-8 m-8 mx-auto block text-xl">
+          Start Installing
+        </button>
+      </div>
+      <div id="progressScreen" class="p-8 hidden">
+        <h2 class="text-xl md:text-2xl text-center my-[4vw]">Installing Cloudclient</h2>
+        <div class="bg-zinc-500 w-16 h-16 md:w-32 md:h-32 mx-auto animate-ping"></div>
+        <div
+          class="bg-zinc-500 w-16 h-16 md:w-32 md:h-32 mx-auto relative bottom-16 md:bottom-32"
+        ></div>
+        <pre
+          id="progressLog"
+          class="bg-zinc-800 p-4 m-4 whitespace-pre-wrap shadow-md rounded-sm shadow-zinc-800"
+        ></pre>
+      </div>
+      <div id="finishScreen" class="p-8 hidden">
+        <h2 class="text-xl md:text-2xl text-center my-[4vw]">
+          Cloudclient is installed
+        </h2>
+        <div
+          class="bg-green-500 w-16 h-16 md:w-32 md:h-32 animate-bounce inline-block"
+        ></div>
+        <div
+          id="vanillaFinishInfo"
+          class="p-4 bg-zinc-800 inline-block w-[calc(100ch_-_16rem)] align-top"
+        >
+          <p>
+            Given that you're using the vanilla launcher, you still need to create a
+            profile.
+          </p>
+          <ol class="list-decimal list-inside">
+            <li>Go to Installations and click "New installation"</li>
+            <li>Name the instance Skyclient</li>
+            <li>
+              Set the Minecraft version to Forge 1.8.9 (at the bottom of the list)
+            </li>
+            <li>
+              Set the icon to the Skyclient logo
+              <a download href="/assets/Skyclient.png" class="text-slate-500">
+                (click to download)
+              </a>
+            </li>
+            <li>
+              Set the game directory to the "skyclient" folder inside your normal
+              .minecraft folder
+            </li>
+          </ol>
+          <p>
+            <a
+              href="https://cdn.discordapp.com/attachments/887818760126345246/919984824733794354/how_to_add_an_installation_profile.mp4"
+              class="text-slate-500"
+            >
+              Watch this video
+            </a>
+            if you need help.
+          </p>
+          <p>
+            Need support? Click the "Cloudclient" text in the header to get to our
+            Discord.
+          </p>
+        </div>
+        <div
+          id="multimcFinishInfo"
+          class="p-4 bg-zinc-800 w-[calc(100ch_-_16rem)] align-top hidden"
+        >
+          <p>
+            Given that you're using MultiMC and already created a profile, you should be
+            able to hop right in.
+          </p>
+          <p>
+            Need support? Click the "Cloudclient" text in the header to get to our
+            Discord.
+          </p>
+        </div>
+      </div>
+      <p>
+        <a href="/" class="text-slate-500">Back to Skyclient</a>
+        -
+        <a href="/#credits" class="text-slate-500">Credits</a>
+      </p>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="/assets/cloudclient.js"></script>
+  </body>
+</html>
