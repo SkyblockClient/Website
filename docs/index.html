@@ -110,7 +110,7 @@
           >
             {{name}}
           </span>
-          <p class="block text-xl font-bold p-2">{{description}}</p>
+          <p class="block text-xl font-bold p-2">{{{description}}}</p>
         </li>
       </template-example>
       <open-item
@@ -119,7 +119,7 @@
       ></open-item>
       <open-item
         name="Open community"
-        description="Skyclient has a open Discord server. You can join it at inv.wtf/skyclient."
+        description="Skyclient has a open Discord server. You can join it at <a href='https://inv.wtf/skyclient' class='text-slate-500 hover:text-slate-400'>inv.wtf/skyclient</a>."
       ></open-item>
       <open-item
         i="3"
@@ -201,7 +201,13 @@
         </a>
       </li>
       <li>Many independent mod developers</li>
-      <li>The Discord community (inv.wtf/skyclient)</li>
+      <li>
+        The Discord community (
+        <a href="https://inv.wtf/skyclient" class="text-slate-500 hover:text-slate-400">
+          inv.wtf/skyclient
+        </a>
+        )
+      </li>
       <li>People who've worked on Skyclient</li>
     </ul>
     <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
