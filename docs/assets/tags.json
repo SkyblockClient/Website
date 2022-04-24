@@ -1,0 +1,76 @@
+{
+   "tags": {
+      "cringe":["&3[&2Please help me i cant code and this is torture&3]","&3[&2Cringe&3]"],
+      "Booster":["&5[&dBooster&5]","&5[&dB&5]"],
+      "ResourceCreator": ["&1[&9Resource Creator&1]","&1[&9RC&1]"],
+      "cool": ["&9[&5Cool&9]","&9[&5C&9]"],
+      "nacrt":["&a[nacrt]","&a[nacrt]"],
+      "micro": ["&b[&dAnime &9Girl &3Enthusiast&b]","&b[&6Weeb&b]"],
+      "lisena": ["&6[&2Pirate Queen&6]","&6[&2Pirate&6]"],
+      "juni": ["&d[&2Bird Manager&d]","&d[&2birb&d]"],
+      "brian": ["&4[&cBrian&4]","&4[&cBrian&4]"],
+      "HellCastleSupport": ["&8[&4Hell&fCastle&8]","&8[&4H&fC&8]"],
+      "HellCastleSupportCustomTag1": ["&8[&4ppAdmin&8]","&8[&4ppA&8]"],
+      "HellCastleSupportCustomTag2": ["&8[&dPrincess&8]","&8[&dPrincess&8]"],
+      "HellCastleSupportCustomTag3": ["&8[&b&6u/&bRayDeeUx&8]","&8[&b&6u/&bRayDeeUx&8]"],
+      "HellCastleSupportCustomTag4": ["&8[&aS&2t&eo&6n&9k&8]","&8[&2$$$&8]"],
+      "HellCastleSupportCustomTagFeel": ["&8[&bTr&dan&fs&dgi&brl&8]","&8[&bF&de&fl&8]"],
+      "HellCastleSupportCustomTagSans": ["§r§9Party §8> §6","§r§9Party §8> §6"],
+      "wyvest": ["&5[WWWWWWWWW]&r", "&5[Wyvest]&r]
+   },
+   "perms": {
+      "cringe": [
+         "ffe0706ebdb24557930b9aa2d10bc383"
+      ],
+      "Booster": [
+         "bd082a55373e4305bee348b9060e16c9",
+         "1bb9f39948c7499eb21b23b8bad56f6e",
+         "06142ba5e64543fc90b6f75c1f71cf8b",
+         "249f6aa5e7c248e495d13ec4b8a1a0d4"
+      ],
+      "ResourceCreator": [
+         "90a8ada254224c6593d20994ba5bbc8d"
+      ],
+      "cool": [
+         "796deff1f7d04a858908fe69141bfe90",
+         "16bfa19d62a44083801529911e3a9c09",
+         "697f26c6c9a04055a67c32aa0d25697e",
+         "e725ace37e2c414282cee1ea96678a49"
+      ],
+      "nacrt": [
+         "66c86bdcff6641b9a874b8c0099b410e"
+      ],
+      "micro": [
+         "ad371f407c8144c0bea559fdf019384f"
+      ],
+      "lisena": ["f1dfad19e2024b199d5575a2b0851e3d"],
+      "juni": ["58c2ae0e17734cd3bd530316367964c8"],
+      "brian": ["1f2db798cf95470d9a99da66451eebc8"],
+      "HellCastleSupport": [
+         "cfb84b032a244fdb896e68d5e8ad8f15",
+         "bb3c62c3428340789779d1b0db7a7743",
+         "b020c808ee5242e895dc4cff9d1f70ad",
+         "c9385237ccc74843b2c6c19385bce60a",
+         "098272d87c774c4eb671b8741498f236",
+         "6a24734e7d9f4abfbf9ec56bf5428f1b",
+         "1635097238d146cf92b6d9ddc2e869c1",
+         "4a17f91848704ca5810605869bb7e6e9"
+      ],
+      "HellCastleSupportCustomTag1": ["48976b6a68c640529d078a6bebfaa4ef"],
+      "HellCastleSupportCustomTag2": ["f0339ca93c854933af42a575e9a68d0e"],
+      "HellCastleSupportCustomTag3": ["b43d74579da4408ba9fb51239022cec9"],
+      "HellCastleSupportCustomTag4": ["5d01fae2faa34dd188c595e9c433eefb"],
+      "HellCastleSupportCustomTagFeel": ["b71c93bbd970475cb78e0d74ca899769"],
+      "HellCastleSupportCustomTagSans": ["0e9360bac3c14a0eafd6cb2f5d9569b7"],
+      "wyvest": ["a53314040e77440e8bef24c071dac1ae"]
+   },
+   "whitelist":false,
+   "whitelisted": [
+      "ffe0706ebdb24557930b9aa2d10bc383",
+      "94003a39360f4763b0d6c28c164ec917",
+      "cd911f52886e447b98246d0de4baf25a",
+      "90a8ada254224c6593d20994ba5bbc8d",
+      "ad371f407c8144c0bea559fdf019384f",
+      "f1dfad19e2024b199d5575a2b0851e3d"
+   ]
+}
