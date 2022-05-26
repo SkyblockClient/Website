@@ -3,7 +3,7 @@ If you have the mod NEU installed, you can view where fairy souls are with `/neu
 Touching grass is not needed to complete skyblock, dont listen to those idiots
 Floors 8 through 10 of the Catacombs were originally planned for release, but portions of it were later merged into Floor 7 and its Master Mode counterpart.
 SkyClient is not a client, it's an installer for Forge and mods + packs.
-At one point, Feather Client was willing to pay $300 USD to add Skytils.
+Skytils by Sychic and Lily was once worth approximately $300 USD as a result of Feather Client's actions.
 SkyblockPersonalized was once the cause of countless rickrolls from right-clicking any of the Mathematics Farming Hoes. This was later removed for a more standardized message in its v1.7.0 release.
 The mod NEU has over 40k lines of code, making it one of the largest mods out there for Skyblock.
 The icon you see in SkyClient's main menu and other places is made by none other than the esteemed Zetvue#9664.
