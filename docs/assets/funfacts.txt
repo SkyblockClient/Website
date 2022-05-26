@@ -1,20 +1,20 @@
 418 I'm a teapot
-If you have the mod NEU installed, you can view where fairy souls are with `/neusouls on`.
+If you have the mod NEU installed,\nyou can view where fairy souls are with `/neusouls on`.
 Touching grass is not needed to complete skyblock, dont listen to those idiots
-Floors 8 through 10 of the Catacombs were originally planned for release, but portions of it were later merged into Floor 7 and its Master Mode counterpart.
+Floors 8 through 10 of the Catacombs were originally planned for release,\nbut portions of it were later merged into Floor 7 and its Master Mode counterpart.
 SkyClient is not a client, it's an installer for Forge and mods + packs.
-Skytils by Sychic and Lily was once worth approximately $300 USD as a result of Feather Client's actions.
-SkyblockPersonalized was once the cause of countless rickrolls from right-clicking any of the Mathematics Farming Hoes. This was later removed for a more standardized message in its v1.7.0 release.
-The mod NEU has over 40k lines of code, making it one of the largest mods out there for Skyblock.
-The icon you see in SkyClient's main menu and other places is made by none other than the esteemed Zetvue#9664.
+At one point, Feather Client was willing to pay $300 USD to add Skytils.
+SkyblockPersonalized was once the cause of countless rickrolls\nfrom right-clicking any of the Mathematics Farming Hoes.\nThis was later removed for a more standardized message in its v1.7.0 release.
+The mod NEU has over 40k lines of code, making it\none of the largest mods out there for Skyblock.
+The icon you see in SkyClient's main menu and other places\nis made by none other than the esteemed Zetvue#9664.
 Most of SkyClient's staff have not touched Hypixel Skyblock for several months.
-Grass is a plant with narrow leaves growing from the base. [...] Grasses are monocotyledon, herbaceous plants.
-SkyClient was once exclusive to Windows users. Fortunately, now we have a Java-based version, and a web-based version [WIP].
-You'll never believe this, but our Discord's support channel is called #support! Use it as necessary.
-SkyClient contains only the finest ethically sourced mods and packs - we asked permission before adding them to SkyClient.
+Grass is a plant with narrow leaves growing from the base. [...]\nGrasses are monocotyledon, herbaceous plants.
+SkyClient was once exclusive to Windows users.\nFortunately, now we have a Java-based version, and a web-based version [WIP].
+You'll never believe this, but our Discord's support channel\nis called #support! Use it as necessary.
+SkyClient contains only the finest ethically sourced mods and packs -\nwe asked permission before adding them to SkyClient.
 SkyClient is for more than Skyblock, even though it started out that way.
 SkyClient makes no profit: we have 40 unpaid child laborers in our basement
-Most mod's settings are located in a command you can run when in game; e.g Patcher is configurable with `/patcher`.
+Most mod's settings are located in a command you can run when in game;\ne.g Patcher is configurable with `/patcher`.
 At one point in Minecraft, there was a rare chance of Snow Golems naturally spawning.
-When you're asked to update your mods, you can click on one to stop it from being replaced with SkyClient's latest version.
+When you're asked to update your mods, you can click on one to stop it\nfrom being replaced with SkyClient's latest version.
 Wyvest
