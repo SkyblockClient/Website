@@ -18,3 +18,4 @@ Most mod's settings are located in a command you can run when in game;\ne.g Patc
 At one point in Minecraft, there was a rare chance of Snow Golems naturally spawning.
 When you're asked to update your mods, you can click on one to stop it\nfrom being replaced with SkyClient's latest version.
 Wyvest
+Forge is actually just 2 files, a jar and a json.
