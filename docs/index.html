@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Download Skyclient, the automatic asset installer for Minecraft, made for playing on Hypixel."
+    />
     <meta property="og:title" content="Skyclient" />
     <meta
       property="og:description"
@@ -28,9 +32,7 @@
       <img class="inline-block max-h-16" src="assets/Skyclient.png" />
       An open installer to help you get all of the assets you need for Hypixel.
     </p>
-    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10">
-      Downloads
-    </h2>
+    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10">Downloads</h2>
     <!-- Present the options
     - Windows (by @nacrt, use assets/skyclient-windows.png, made with C#)
     - Web (by @KTibow, use assets/skyclient-web.png, made with modern web APIs)
@@ -84,15 +86,11 @@
     - Skyclient downloads them
     - Skyclient sets up your .minecraft folder
     -->
-    <ul
-      class="text-center flex flex-col lg:flex-row flex-wrap justify-center md:text-xl"
-    >
+    <ul class="text-center flex flex-col lg:flex-row flex-wrap justify-center md:text-xl">
       <template-example element-name="step-item">
         <li class="inline-block bg-zinc-800 rounded-md p-2 m-2">
           <span class="inline-block text-2xl font-bold p-2">{{i}}</span>
-          <span class="inline-block bg-zinc-700 rounded-md text-2xl font-bold p-2">
-            {{name}}
-          </span>
+          <span class="inline-block bg-zinc-700 rounded-md text-2xl font-bold p-2">{{name}}</span>
         </li>
       </template-example>
       <step-item i="1" name="Choose a option and download it"></step-item>
@@ -112,9 +110,7 @@
     <ul class="text-center flex flex-col lg:flex-row justify-center md:text-xl">
       <template-example element-name="open-item">
         <li class="inline-block flex-1 bg-zinc-800 rounded-md p-2 m-2">
-          <span
-            class="inline-block mx-auto bg-zinc-700 rounded-md text-2xl font-bold p-2"
-          >
+          <span class="inline-block mx-auto bg-zinc-700 rounded-md text-2xl font-bold p-2">
             {{name}}
           </span>
           <p class="block text-xl font-bold p-2">{{{description}}}</p>
@@ -187,10 +183,7 @@
         reasons-array-2="Feather's community is... weird"
       ></competitor-option>
     </div>
-    <h2
-      class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10"
-      id="credits"
-    >
+    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10" id="credits">
       Credits
     </h2>
     <p class="text-center text-xl font-bold my-10">
@@ -199,11 +192,7 @@
     <ul class="list-disc text-center">
       <li>
         Many icons on this page by
-        <a
-          target="_blank"
-          class="text-slate-500 hover:text-slate-400"
-          href="https://icons8.com"
-        >
+        <a target="_blank" class="text-slate-500 hover:text-slate-400" href="https://icons8.com">
           Icons8
         </a>
       </li>
