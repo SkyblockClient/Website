@@ -21,7 +21,7 @@ When you're asked to update your mods, you can click on one to stop it\nfrom bei
 Wyvest
 Forge is actually just 2 files, a jar and a json.
 Make sure to drink water! You never know if you might be dehydrated :)
-People asking you to "test their mod" are always trying to rat you. The only ones you can trust are ones widely trusted by the community.
+People asking you to "test their mod" are always trying to rat you.\nThe only ones you can trust are ones widely trusted by the community.
 SBE bad lol
 Make sure to read up on this! It's **essential** for mod safety.\nhttps://github.com/ILikePlayingGames/SkyblockModSafety
 Have a great day!
