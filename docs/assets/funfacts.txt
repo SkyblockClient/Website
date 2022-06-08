@@ -14,7 +14,7 @@ You'll never believe this, but our Discord's support channel\nis called #support
 SBE has skidded from countless mods including DSM, Skytils and NEU!
 SkyClient contains only the finest ethically sourced mods and packs -\nwe asked permission before adding them to SkyClient.
 SkyClient is for more than Skyblock, even though it started out that way.
-SkyClient makes no profit: we have 40 unpaid child laborers in our basement
+SkyClient is a zero profit organization; we have 40 unpaid volunteers around the globe.
 Most mod's settings are located in a command you can run when in game;\ne.g Patcher is configurable with `/patcher`.
 At one point in Minecraft, there was a rare chance of Snow Golems naturally spawning.
 When you're asked to update your mods, you can click on one to stop it\nfrom being replaced with SkyClient's latest version.
