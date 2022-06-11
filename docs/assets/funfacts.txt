@@ -4,7 +4,7 @@ Touching grass is not needed to complete skyblock, dont listen to those idiots
 Floors 8 through 10 of the Catacombs were originally planned for release,\nbut portions of it were later merged into Floor 7 and its Master Mode counterpart.
 SkyClient is not a client, it's an installer for Forge and mods + packs.
 At one point, Feather Client was willing to pay $300 USD to add Skytils.
-SkyblockPersonalized was once the cause of countless rickrolls from right-clicking\nany of the Mathematics Farming Hoes. (It's been removed by now, of course.)
+SkyblockPersonalized was once the cause of many rickrolls from right-clicking\nany of the Mathematics Farming Hoes. (It's been removed by now, of course.)
 The mod NEU has over 80k lines of code, making it\none of the largest mods out there for Skyblock.
 The icon you see in SkyClient's main menu and other places\nis made by none other than the esteemed Zetvue#9664.
 Most of SkyClient's staff have not touched Hypixel Skyblock for several months.
@@ -25,9 +25,5 @@ People asking you to "test their mod" are always trying to rat you.\nThe only on
 SBE bad lol
 Here's a good list of ways to stop yourself from getting ratted:\nhttps://bit.ly/HySbModSafetySCC
 Have a great day!
-Don't be scared to ask for support! SkyClient's Discord server often has over 20 concurrent support tickets open at any given day.\n\nOkay, maybe you should be mildly scared.
-#denied-mod-suggestions is an informal guideline for what mods or packs to suggest for SkyClient. Please read it!
-Feel like you're still missing a few mods? No worries-just head over to #bot-commands on the Discord server and drop the command named /modlist.
-Opal is a hydrated amorphous form of silica (SiO2·nH2O); its water content may range from 3 to 21% by weight, but is usually between 6 and 10%.
-Depending on the conditions in which it formed, opal may be transparent, translucent, or opaque, and the background color may be white, black, or nearly any color of the visual spectrum.
-If you can read this, you are definitely not on macOS. Otherwise, all you'll see is a Mojang logo.
+Don't be scared to open a #support ticket in the Discord!\n(https://inv.wtf/skyclient)
+If you can read this, you are definitely not on macOS.\nOtherwise, all you'll see is a Mojang logo.
