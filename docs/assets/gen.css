@@ -1,3 +1,8 @@
+@supports (display: none) {
+  #backport {
+      display: none;
+  }
+}
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
