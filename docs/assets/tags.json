@@ -28,7 +28,7 @@
     "wyvest": ["&5[WWWWWWWWW]&r", "&5[Wyvest]&r"],
     "kti": ["&9&Z[skyclient dev]&r", "&9&Z[SC dev]&r"],
     "alfredo": ["&7[Alfredo cuz my friend is eating it]&r", "&7[Alfredo]&r"],
-    "maximusbar": ["&8[&5Maximusbar&8]", "&8[&5Max&8]"]
+    "Maya": ["&8[&dCutie&8]", "&8[&5Maya&8]"]
   },
   "perms": {
     "cringe": ["ffe0706ebdb24557930b9aa2d10bc383"],
@@ -71,7 +71,7 @@
     "wyvest": ["a53314040e77440e8bef24c071dac1ae"],
     "kti": ["1086d63821274490bed2d6cfeb58b38a"],
     "alfredo": ["2d06ec72e7234a8ba0aafaf6ab6b9934"],
-    "maximusbar": ["a1732122e22e4edf883c09673eb55de8"]
+    "Maya": ["a1732122e22e4edf883c09673eb55de8"]
   },
   "whitelist": false,
   "whitelisted": [
