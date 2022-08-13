@@ -17,20 +17,19 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <title>Skyclient</title>
   </head>
-  <body class="bg-zinc-900 text-white text-center">
+  <body
+    class="bg-zinc-900 bg-[url(layered-waves-haikei.svg)] bg-no-repeat bg-contain text-white text-center"
+  >
     <a id="backport" href="/backport/">
       Are you on an old browser? Click to view a version of this site that renders.
     </a>
-    <img
-      src="assets/layered-waves-haikei.svg"
-      class="absolute left-0 right-0 top-0 bottom-0 w-full -z-10"
-      alt=""
-    />
-    <h1 class="text-3xl md:text-6xl lg:text-9xl font-bold my-8 h-[14vw] xl:my-20 xl:h-[10vw]">
+    <h1
+      class="text-black text-3xl md:text-6xl lg:text-9xl font-bold my-8 h-[14vw] xl:my-20 xl:h-[10vw]"
+    >
       Skyclient
     </h1>
     <p>
-      <img class="inline-block max-h-16" src="assets/Skyclient.png" />
+      <img class="inline-block max-h-16" src="assets/Skyclient.png" alt="Skyclient logo" />
       An open installer to help you get all of the assets you need for Hypixel.
     </p>
     <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-10">Downloads</h2>
@@ -46,7 +45,7 @@
           href="{{url}}"
         >
           <h2 class="text-center font-bold text-2xl my-8">{{name}}</h2>
-          <img src="{{image}}" />
+          <img src="{{image}}" alt="Screenshot of the {{name}} Skyclient installer" />
           <div class="flex flex-wrap justify-center mt-auto">
             {{#chips}}
             <div class="inline-block bg-zinc-700 rounded-3xl py-2 px-4 m-2">{{.}}</div>
@@ -123,7 +122,7 @@
       ></open-item>
       <open-item
         name="Open community"
-        description="Skyclient has a open Discord server. You can join it at <a href='https://inv.wtf/skyclient' class='text-slate-500 hover:text-slate-400'>inv.wtf/skyclient</a>."
+        description="Skyclient has a open Discord server. You can join it at <a href='https://inv.wtf/skyclient' class='text-slate-400 hover:text-slate-500'>inv.wtf/skyclient</a>."
       ></open-item>
       <open-item
         i="3"
@@ -144,7 +143,7 @@
       <template-example element-name="competitor-option">
         <div class="flex flex-1 flex-col items-center bg-zinc-800 p-4 m-4 rounded-md">
           <h2 class="text-center font-bold text-2xl my-8">
-            <img src="{{image}}" class="inline-block max-h-16" />
+            <img src="{{image}}" alt="Logo of {{name}}" class="inline-block max-h-16" />
             {{name}}
           </h2>
           <ul class="flex flex-wrap justify-center mt-auto">
@@ -187,7 +186,7 @@
       <h2 class="text-center font-bold text-3xl my-4">4.6 / 5</h2>
       <p class="italic">
         Source: Average from poll in
-        <a href="https://inv.wtf/skyclient" class="text-slate-500 hover:text-slate-400">
+        <a href="https://inv.wtf/skyclient" class="text-slate-400 hover:text-slate-500">
           the Discord
         </a>
         , excluding staff
@@ -210,14 +209,14 @@
     <ul class="list-disc text-center">
       <li>
         Many icons on this page by
-        <a target="_blank" class="text-slate-500 hover:text-slate-400" href="https://icons8.com">
+        <a target="_blank" class="text-slate-400 hover:text-slate-500" href="https://icons8.com">
           Icons8
         </a>
       </li>
       <li>Many independent mod developers (who agreed to let us use their mods)</li>
       <li>
         The Discord community (
-        <a href="https://inv.wtf/skyclient" class="text-slate-500 hover:text-slate-400">
+        <a href="https://inv.wtf/skyclient" class="text-slate-400 hover:text-slate-500">
           inv.wtf/skyclient
         </a>
         )
