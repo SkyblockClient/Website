@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <title>Skyclient</title>
   </head>
-  <body class="bg-zinc-900 text-white">
+  <body class="bg-zinc-900 text-white text-center">
     <a id="backport" href="/backport/">
       Are you on an old browser? Click to view a version of this site that renders.
     </a>
@@ -26,16 +26,14 @@
       class="absolute left-0 right-0 top-0 bottom-0 w-full -z-10"
       alt=""
     />
-    <h1
-      class="text-3xl md:text-6xl lg:text-9xl text-center font-bold my-8 h-[14vw] xl:my-20 xl:h-[10vw]"
-    >
+    <h1 class="text-3xl md:text-6xl lg:text-9xl font-bold my-8 h-[14vw] xl:my-20 xl:h-[10vw]">
       Skyclient
     </h1>
-    <p class="text-center">
+    <p>
       <img class="inline-block max-h-16" src="assets/Skyclient.png" />
       An open installer to help you get all of the assets you need for Hypixel.
     </p>
-    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10">Downloads</h2>
+    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-10">Downloads</h2>
     <!-- Present the options
     - Windows (by @nacrt, use assets/skyclient-windows.png, made with C#)
     - Web (by @KTibow, use assets/skyclient-web.png, made with modern web APIs)
@@ -81,7 +79,7 @@
         chips-array-2="Requires Java"
       ></download-option>
     </div>
-    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-32">Steps</h2>
+    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-32">Steps</h2>
     <!-- Fancy ordered list
     - Choose a option and download it
     - Run it
@@ -89,7 +87,7 @@
     - Skyclient downloads them
     - Skyclient sets up your .minecraft folder
     -->
-    <ul class="text-center flex flex-col lg:flex-row flex-wrap justify-center md:text-xl">
+    <ul class="flex flex-col lg:flex-row flex-wrap justify-center md:text-xl">
       <template-example element-name="step-item">
         <li class="inline-block bg-zinc-800 rounded-md p-2 m-2">
           <span class="inline-block text-2xl font-bold p-2">{{i}}</span>
@@ -104,13 +102,13 @@
       <step-item i="5" name="Skyclient sets up your .minecraft folder"></step-item>
       <step-item i="6" name="Skyclient is ready to run!"></step-item>
     </ul>
-    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-32">Open</h2>
+    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-32">Open</h2>
     <!-- State the ways that Skyclient is open
     - Open source
     - Open community
     - Open to modify once installed
     -->
-    <ul class="text-center flex flex-col lg:flex-row justify-center md:text-xl">
+    <ul class="flex flex-col lg:flex-row justify-center md:text-xl">
       <template-example element-name="open-item">
         <li class="inline-block flex-1 bg-zinc-800 rounded-md p-2 m-2">
           <span class="inline-block mx-auto bg-zinc-700 rounded-md text-2xl font-bold p-2">
@@ -133,9 +131,7 @@
         description="At the end of the day, Skyclient just grabs misc assets, and adds them to a Forge installation. You can add or remove stuff as much as you want."
       ></open-item>
     </ul>
-    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-32">
-      Skyclient vs others
-    </h2>
+    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-32">Skyclient vs others</h2>
     <!--
       Present the other competitors
       - Vanilla
@@ -186,6 +182,25 @@
         reasons-array-2="Feather can often break other mods"
       ></competitor-option>
     </div>
+    <div class="m-4 rounded-md">
+      <p class="text-xl">Skyclient is rated</p>
+      <h2 class="text-center font-bold text-3xl my-4">4.6 / 5</h2>
+      <p class="italic">
+        Source: Average from poll in
+        <a href="https://inv.wtf/skyclient" class="text-slate-500 hover:text-slate-400">
+          the Discord
+        </a>
+        , excluding staff
+      </p>
+      <!--
+        1: 1 person
+        2: 0 people
+        3: 1 person
+        4: 13 people
+        5: 33 people
+        (1 + 3 + 4 * 13 + 5 * 33) / (1 + 1 + 13 + 33) = 4.60
+      -->
+    </div>
     <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10" id="credits">
       Credits
     </h2>
@@ -211,5 +226,31 @@
     </ul>
     <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
     <script src="example.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SkyClient",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "ratingCount": "48"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://skyclient.co",
+        "logo": "https://skyclient.co/assets/Skyclient.png"
+      }
+    </script>
   </body>
 </html>

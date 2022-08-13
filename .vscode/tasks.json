@@ -6,7 +6,8 @@
     {
       "label": "gen css",
       "type": "shell",
-      "command": "npx tailwindcss -i base.css -o docs/assets/gen.css --watch"
+      "command": "npx tailwindcss -i base.css -o docs/assets/gen.css --watch",
+      "problemMatcher": []
     }
   ]
 }
