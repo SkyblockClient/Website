@@ -1,6 +1,7 @@
 RIP Technoblade\nHe will be missed
 RIP Technoblade\nHe will be missed
 RIP Technoblade\nHe will be missed
+RIP Light_Exists\nHe will be missed
 418 I'm a teapot
 If you have the mod NEU installed,\nyou can view where fairy souls are with `/neusouls on`.
 Touching grass is not needed to complete skyblock, don't listen to those idiots
@@ -10,22 +11,23 @@ At one point, Feather Client was willing to pay $300 USD to add Skytils.
 SkyblockPersonalized was once the cause of many rickrolls from right-clicking\nany of the Mathematics Farming Hoes. (It's been removed by now, of course.)
 The mod NEU has over 80k lines of code, making it\none of the largest mods out there for Skyblock.
 The icon you see in SkyClient's main menu and other places\nis made by none other than the esteemed Zetvue#9664.
-Most of SkyClient's staff have not touched Hypixel Skyblock for several months.
+Most of SkyClient's staff have not touched Hypixel Skyblock for several months. Quit today!
 Grass is a plant with narrow leaves growing from the base. [...]\nGrasses are monocotyledon, herbaceous plants.
 SkyClient was once exclusive to Windows users.\nFortunately, now we have a Java-based version, and a web-based version [WIP].
 You'll never believe this, but our Discord's support channels\nare in a category called SUPPORT IS HERE! Use them as necessary.
-SBE has skidded from countless mods including DSM, Skytils and NEU!
 SkyClient contains only the finest ethically sourced mods and packs -\nwe asked permission before adding them to SkyClient.
 SkyClient is for more than Skyblock, even though it started out that way.
-SkyClient is a zero profit organization; we have 40 unpaid volunteers around the globe.
+SkyClient is a zero profit organization; we have unpaid volunteers around the globe.
 Most mods' settings are located in a command you can run when in game;\neg Patcher is configurable with `/patcher`.
 At one point in Minecraft, there was a rare chance of Snow Golems naturally spawning.
 When you're asked to update your mods, you can click on a mod's name to stop it\nfrom being replaced with SkyClient's latest version.
 W[h]yvest
+Quagsire
+Boost our discord!\n(https://inv.wtf/skyclient)
+RUMOUR. Open your ears; 9r"5j5&?OWTY Z0d
 Forge is actually just 2 files, a .jar and a .json.
 Make sure to drink water! You never know if you might be dehydrated :)
 People asking you to "test their mod" are always trying to hack you.\nThe only ones you can trust are ones widely trusted by the community.
-SBE bad lol
 Here's a good list of ways to stop yourself from getting hacked:\nhttps://bit.ly/HySbModSafetySCC
 Have a great day!
 Don't be scared to open a #support ticket in the Discord!\n(https://inv.wtf/skyclient)
