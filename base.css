@@ -1,7 +1,10 @@
-@supports (display: none) {
-    #backport {
-        display: none;
-    }
+@media not all {
+  #backportAlt {
+    display: block !important;
+  }
+}
+:root {
+  color-scheme: dark;
 }
 @tailwind base;
 @tailwind components;

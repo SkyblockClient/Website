@@ -18,38 +18,44 @@
     <title>Skyclient</title>
   </head>
   <body
-    class="bg-zinc-900 bg-[url(layered-waves-haikei.svg)] bg-no-repeat bg-contain text-white text-center"
+    class="bg-zinc-900 bg-[url(layered-waves-haikei.svg)] bg-[length:150%] bg-no-repeat text-center text-white xl:bg-contain"
   >
-    <a id="backport" href="/backport/">
+    <!--[if IE]>
+      <a href="/backport/">
+        Are you on an old browser? Click to view a version of this site that renders.
+      </a>
+    <![endif]-->
+    <a id="backportAlt" href="/backport/" style="display: none">
       Are you on an old browser? Click to view a version of this site that renders.
     </a>
-    <h1
-      class="text-black text-3xl md:text-6xl lg:text-9xl font-bold my-8 h-[14vw] xl:my-20 xl:h-[10vw]"
-    >
-      Skyclient
-    </h1>
+    <h1 class="my-8 text-6xl font-bold text-black sm:my-20 md:text-9xl">Skyclient</h1>
     <p>
-      <img class="inline-block max-h-16" src="assets/Skyclient.png" alt="Skyclient logo" />
+      <img class="mr-4 inline-block max-h-16" src="assets/Skyclient.png" alt="Skyclient logo" />
       An open installer to help you get all of the assets you need for Hypixel.
     </p>
-    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-10">Downloads</h2>
-    <!-- Present the options
-    - Windows (by @nacrt, use assets/skyclient-windows.png, made with C#)
-    - Web (by @KTibow, use assets/skyclient-web.png, made with modern web APIs)
-    - Universal (by @koxx12-dev, use assets/skyclient-linux.png, made with Java)
-    -->
-    <div class="flex flex-col lg:flex-row">
+    <h2 class="my-10 text-2xl font-bold md:text-4xl lg:text-6xl">Downloads</h2>
+    <div class="m-4 flex flex-col gap-4 lg:flex-row">
       <template-example element-name="download-option">
         <a
-          class="flex flex-1 flex-col items-center p-4 m-4 rounded-md bg-zinc-800 hover:bg-slate-800 transition-all cursor-pointer"
+          class="group flex flex-1 basis-1/2 flex-col rounded-3xl bg-zinc-800 transition-all hover:bg-main-3/20 {{^vertical}} lg:flex-row {{/vertical}}"
           href="{{url}}"
         >
-          <h2 class="text-center font-bold text-2xl my-8">{{name}}</h2>
-          <img src="{{image}}" alt="Screenshot of the {{name}} Skyclient installer" />
-          <div class="flex flex-wrap justify-center mt-auto">
-            {{#chips}}
-            <div class="inline-block bg-zinc-700 rounded-3xl py-2 px-4 m-2">{{.}}</div>
-            {{/chips}}
+          <img
+            src="{{image}}"
+            alt="Screenshot of the {{name}} Skyclient installer"
+            class="rounded-3xl object-cover md:h-72 lg:h-auto {{^vertical}} lg:w-72 xl:h-72 xl:w-auto {{/vertical}}"
+          />
+          <div class="flex flex-col p-4">
+            <h2 class="mb-8 text-2xl font-bold">{{name}}</h2>
+            <div class="mt-auto flex flex-wrap justify-center">
+              {{#chips}}
+              <div
+                class="m-2 inline-block rounded-3xl bg-zinc-700 py-2 px-4 transition-all group-hover:bg-main-4/20"
+              >
+                {{.}}
+              </div>
+              {{/chips}}
+            </div>
           </div>
         </a>
       </template-example>
@@ -62,14 +68,6 @@
         chips-array-2="Requires Windows"
       ></download-option>
       <download-option
-        name="Web (Mart)"
-        image="assets/skyclient-mart.png"
-        url="https://github.com/KTibow/Mart/releases"
-        chips-array-0="Made by @KTibow"
-        chips-array-1="Made with JavaScript"
-        chips-array-2="Requires something to display websites"
-      ></download-option>
-      <download-option
         name="Java"
         image="assets/skyclient-linux.png"
         url="https://github.com/SkyblockClient/Skyclient-installer-Java/releases/latest"
@@ -78,7 +76,34 @@
         chips-array-2="Requires Java"
       ></download-option>
     </div>
-    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-32">Steps</h2>
+    <div class="m-4 flex flex-col gap-4 lg:flex-row">
+      <div class="flex-grow text-right">
+        <h2 class="mx-6 my-4 text-2xl font-bold lg:text-4xl">Experimental</h2>
+        <p>
+          These installers are still in beta, but they have new features like being able to add mods
+          from Skyclient onto an existing Skyclient installation.
+        </p>
+      </div>
+      <download-option
+        name="Web (Mart)"
+        image="assets/skyclient-mart.png"
+        url="https://github.com/KTibow/Mart/releases"
+        chips-array-0="Made by @KTibow"
+        chips-array-1="Made with JavaScript"
+        chips-array-2="Requires something to display websites"
+        vertical="true"
+      ></download-option>
+      <download-option
+        name="Beta Windows"
+        image="assets/skyclient-windows-beta.png"
+        url="https://github.com/SkyblockClient/Skyclient-Installer-Windows/releases/tag/latest"
+        chips-array-0="Made by @nacrt"
+        chips-array-1="Made with C#"
+        chips-array-2="Requires Windows"
+        vertical="true"
+      ></download-option>
+    </div>
+    <h2 class="my-32 text-2xl font-bold md:text-4xl lg:text-6xl">Steps</h2>
     <!-- Fancy ordered list
     - Choose a option and download it
     - Run it
@@ -86,34 +111,34 @@
     - Skyclient downloads them
     - Skyclient sets up your .minecraft folder
     -->
-    <ul class="flex flex-col lg:flex-row flex-wrap justify-center md:text-xl">
+    <ul class="flex flex-col flex-wrap justify-center md:text-xl lg:flex-row">
       <template-example element-name="step-item">
-        <li class="inline-block bg-zinc-800 rounded-md p-2 m-2">
-          <span class="inline-block text-2xl font-bold p-2">{{i}}</span>
-          <span class="inline-block bg-zinc-700 rounded-md text-2xl font-bold p-2">{{name}}</span>
+        <li class="m-2 inline-block rounded-xl bg-zinc-800 p-2">
+          <span class="inline-block p-2 text-2xl font-bold">{{i}}</span>
+          <span class="inline-block rounded-xl bg-zinc-700 p-2 text-2xl font-bold">{{name}}</span>
         </li>
       </template-example>
       <step-item i="1" name="Choose an option and download it"></step-item>
       <step-item i="2" name="Run Skyclient"></step-item>
       <step-item i="3" name="Choose the mods/texture packs you want"></step-item>
-      <span class="basis-full h-10"></span>
+      <span class="h-10 basis-full"></span>
       <step-item i="4" name="Skyclient downloads what you chose"></step-item>
       <step-item i="5" name="Skyclient sets up your .minecraft folder"></step-item>
       <step-item i="6" name="Skyclient is ready to run!"></step-item>
     </ul>
-    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-32">Open</h2>
+    <h2 class="my-32 text-2xl font-bold md:text-4xl lg:text-6xl">Open</h2>
     <!-- State the ways that Skyclient is open
     - Open source
     - Open community
     - Open to modify once installed
     -->
-    <ul class="flex flex-col lg:flex-row justify-center md:text-xl">
+    <ul class="flex flex-col justify-center md:text-xl lg:flex-row">
       <template-example element-name="open-item">
-        <li class="inline-block flex-1 bg-zinc-800 rounded-md p-2 m-2">
-          <span class="inline-block mx-auto bg-zinc-700 rounded-md text-2xl font-bold p-2">
+        <li class="m-2 inline-block flex-1 rounded-3xl bg-zinc-800 p-2">
+          <span class="mx-auto inline-block rounded-xl bg-zinc-700 p-2 text-2xl font-bold">
             {{name}}
           </span>
-          <p class="block text-xl font-bold p-2">{{{description}}}</p>
+          <p class="block p-2 text-xl font-bold">{{{description}}}</p>
         </li>
       </template-example>
       <open-item
@@ -122,7 +147,7 @@
       ></open-item>
       <open-item
         name="Open community"
-        description="Skyclient has a open Discord server. You can join it at <a href='https://inv.wtf/skyclient' class='text-slate-400 hover:text-slate-500'>inv.wtf/skyclient</a>."
+        description="Skyclient has a open Discord server. You can join it at <a href='https://inv.wtf/skyclient' class='text-main-3 hover:text-main-4 transition-all'>inv.wtf/skyclient</a>."
       ></open-item>
       <open-item
         i="3"
@@ -130,25 +155,17 @@
         description="At the end of the day, Skyclient just grabs misc assets, and adds them to a Forge installation. You can add or remove stuff as much as you want."
       ></open-item>
     </ul>
-    <h2 class="text-2xl md:text-4xl lg:text-6xl font-bold my-32">Skyclient vs others</h2>
-    <!--
-      Present the other competitors
-      - Vanilla
-      - Forge
-      - Lunar
-      - Badlion
-      - Feather
-    -->
+    <h2 class="my-32 text-2xl font-bold md:text-4xl lg:text-6xl">Skyclient vs others</h2>
     <div class="flex flex-col lg:flex-row">
       <template-example element-name="competitor-option">
-        <div class="flex flex-1 flex-col items-center bg-zinc-800 p-4 m-4 rounded-md">
-          <h2 class="text-center font-bold text-2xl my-8">
+        <div class="m-4 flex flex-1 flex-col items-center rounded-3xl bg-zinc-800 p-4">
+          <h2 class="my-8 text-center text-2xl font-bold">
             <img src="{{image}}" alt="Logo of {{name}}" class="inline-block max-h-16" />
             {{name}}
           </h2>
-          <ul class="flex flex-wrap justify-center mt-auto">
+          <ul class="mt-auto flex flex-wrap justify-center">
             {{#reasons}}
-            <li class="inline-block bg-zinc-700 rounded-3xl py-2 px-4 m-2 text-center">{{.}}</li>
+            <li class="m-2 inline-block rounded-3xl bg-zinc-700 py-2 px-4 text-center">{{.}}</li>
             {{/reasons}}
           </ul>
         </div>
@@ -183,13 +200,13 @@
     </div>
     <div class="m-4 rounded-md">
       <p class="text-xl">Skyclient is rated</p>
-      <h2 class="text-center font-bold text-3xl my-4">4.54 / 5</h2>
+      <h2 class="my-4 text-center text-3xl font-bold">4.54 / 5</h2>
       <p class="italic">
         Source: Average from poll in
-        <a href="https://inv.wtf/skyclient" class="text-slate-400 hover:text-slate-500">
-          the Discord
+        <a href="https://inv.wtf/skyclient" class="text-main-3 transition-all hover:text-main-4">
+          the Discord,
         </a>
-        , excluding staff
+        excluding staff
       </p>
       <!--
         1: 1 person
@@ -200,28 +217,35 @@
         (1 + 2 + 3 * 3 + 4 * 22 + 5 * 50) / (1 + 1 + 3 + 22 + 50) = 4.5454
       -->
     </div>
-    <h2 class="text-center text-2xl md:text-4xl lg:text-6xl font-bold my-10" id="credits">
+    <h2 class="my-10 text-center text-2xl font-bold md:text-4xl lg:text-6xl" id="credits">
       Credits
     </h2>
     <p class="text-center text-xl font-bold">
-      Skyclient is possible because of the work of many, many people.
+      This page and the Skyclient project is possible because of the work of many, many people.
     </p>
-    <ul class="list-disc text-center my-10">
-      <li>
-        Many icons on this page by
-        <a target="_blank" class="text-slate-400 hover:text-slate-500" href="https://icons8.com">
-          Icons8
+    <ul class="my-10 mx-auto flex max-w-prose flex-wrap justify-center gap-4">
+      <template-example element-name="credit-item">
+        {{#link}}
+        <a
+          href="{{link}}"
+          class="inline-block flex-1 basis-1/4 rounded-lg bg-main-3/20 p-4 transition-all hover:bg-main-4/30"
+        >
+          {{/link}} {{^link}}
+          <div class="inline-block flex-1 basis-1/4 rounded-lg bg-zinc-800 p-4">
+            {{/link}} {{text}} {{^link}}
+          </div>
+          {{/link}}{{#link}}
         </a>
-      </li>
-      <li>Many independent mod developers (who agreed to let us use their mods)</li>
-      <li>
-        The Discord community (
-        <a href="https://inv.wtf/skyclient" class="text-slate-400 hover:text-slate-500">
-          inv.wtf/skyclient
-        </a>
-        )
-      </li>
-      <li>People who've worked on Skyclient</li>
+        {{/link}}
+      </template-example>
+      <credit-item text="Independent mod developers"></credit-item>
+      <credit-item text="Skyclient devs"></credit-item>
+      <credit-item text="Icons on this page by Icons8" link="https://icons8.com"></credit-item>
+      <credit-item text="The Discord community" link="https://inv.wtf/skyclient"></credit-item>
+      <credit-item
+        text="More people credited in the forum post (expand the Credits spoiler)"
+        link="https://hypixel.net/threads/skyclient-easily-install-and-update-skyblock-mods-and-packs.3731617/"
+      ></credit-item>
     </ul>
     <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
     <script src="example.js"></script>
