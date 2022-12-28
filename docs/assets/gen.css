@@ -668,10 +668,6 @@ video {
   display: none;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -690,6 +686,10 @@ video {
 
 .max-h-4 {
   max-height: 1rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
