@@ -668,6 +668,10 @@ video {
   display: none;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -678,10 +682,6 @@ video {
 
 .h-16 {
   height: 4rem;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .max-h-16 {
