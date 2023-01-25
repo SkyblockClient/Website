@@ -41,6 +41,8 @@ RUMOUR. Open your ears; 9r"5j5&?OWTY Z0d
 Forge is actually just 2 files, a .jar and a .json.
 Make sure to drink water! You never know if you might be dehydrated :)
 People asking you to "test their mod" are always trying to hack you.\nThe only ones you can trust are ones widely trusted by the community.
+Never login with Microsoft to anything except your Minecraft launcher. They are trying to hack you.
+Owners of legitimate Discord servers will never ask you to login with Microsoft. 
 Here's a good list of ways to stop yourself from getting hacked:\nhttps://bit.ly/HySbModSafetySCC
 Have a great day!
 Don't be scared to open a #support ticket in the Discord!\n(https://inv.wtf/skyclient)
