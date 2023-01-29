@@ -1,4 +1,4 @@
 People asking you to "test their mod" are always trying to hack you.\nThe only ones you can trust are ones widely trusted by the community.
-Never login with Microsoft to anything except your Minecraft launcher. They are trying to hack you.
+Never login with Microsoft to anything except your Minecraft launcher.\n They are trying to hack you.
 Owners of legitimate Discord servers will never ask you to login with Microsoft. 
 Here's a good list of ways to stop yourself from getting hacked:\nhttps://bit.ly/HySbModSafetySCC
