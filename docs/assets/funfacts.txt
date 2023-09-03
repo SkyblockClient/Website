@@ -10,7 +10,7 @@ SkyClient is not a client, it's an installer for Forge and mods + packs.
 At one point, Feather Client was willing to pay $300 USD to add Skytils.
 SkyblockPersonalized was once the cause of many rickrolls from right-clicking\nany of the Mathematics Farming Hoes. (It's been removed by now, of course.)
 The mod NEU has over 80k lines of code, making it\none of the largest mods out there for Skyblock.
-The icon you see in SkyClient's main menu and other places\nis made by none other than the esteemed Zetvue#9664.
+The icon you see in SkyClient's main menu and other places\nis made by none other than the esteemed @zetvue.
 Most of SkyClient's staff have not touched Hypixel Skyblock for several months.\nQuit today!
 Grass is a plant with narrow leaves growing from the base. [...]\nGrasses are monocotyledon, herbaceous plants.
 SkyClient was once exclusive to Windows users.\nFortunately, now we have a Java-based version, and a web-based version.
@@ -20,7 +20,7 @@ In Canada, Santa's postal code is H0H 0H0.
 Guvf vf abg na vzcbegnag fragrapr.
 Vs lbh qrpvcure guvf, lbh fubhyq yvfgra gb Mrgihr'f zhfvp.
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-KTibow holds the record for the fastest promotion to admin.
+KTibow held the record for the fastest promotion to admin.\nIt might actually be Caledonian though.
 Play The Binding of Isaac instead of Hypixel Skyblock
 Play Terraria instead of Hypixel Skyblock
 Play Minecraft Survival instead of Hypixel Skyblock
