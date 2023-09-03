@@ -11,9 +11,9 @@ At one point, Feather Client was willing to pay $300 USD to add Skytils.
 SkyblockPersonalized was once the cause of many rickrolls from right-clicking\nany of the Mathematics Farming Hoes. (It's been removed by now, of course.)
 The mod NEU has over 80k lines of code, making it\none of the largest mods out there for Skyblock.
 The icon you see in SkyClient's main menu and other places\nis made by none other than the esteemed Zetvue#9664.
-Most of SkyClient's staff have not touched Hypixel Skyblock for several months. Quit today!
+Most of SkyClient's staff have not touched Hypixel Skyblock for several months.\nQuit today!
 Grass is a plant with narrow leaves growing from the base. [...]\nGrasses are monocotyledon, herbaceous plants.
-SkyClient was once exclusive to Windows users.\nFortunately, now we have a Java-based version, and a web-based version [WIP].
+SkyClient was once exclusive to Windows users.\nFortunately, now we have a Java-based version, and a web-based version.
 You'll never believe this, but our Discord's support channels\nare in a category called SUPPORT IS HERE! Use them as necessary.
 SkyClient contains only the finest ethically sourced mods and packs -\nwe asked permission before adding them to SkyClient.
 In Canada, Santa's postal code is H0H 0H0.
