@@ -1,9 +1,6 @@
 {
   "tags": {
-    "cringe": [
-      "&3[&2Please help me i cant code and this is torture&3]",
-      "&3[&2Cringe&3]"
-    ],
+    "cringe": ["&3[&2Please help me i cant code and this is torture&3]", "&3[&2Cringe&3]"],
     "Booster": ["&5[&dBooster&5]", "&5[&dB&5]"],
     "ResourceCreator": ["&1[&9Resource Creator&1]", "&1[&9RC&1]"],
     "cool": ["&9[&5Cool&9]", "&9[&5C&9]"],
@@ -15,22 +12,16 @@
     "HellCastleSupport": ["&8[&4Hell&fCastle&8]", "&8[&4H&fC&8]"],
     "HellCastleSupportCustomTag1": ["&8[&4ppAdmin&8]", "&8[&4ppA&8]"],
     "HellCastleSupportCustomTag2": ["&8[&dPrincess&8]", "&8[&dPrincess&8]"],
-    "HellCastleSupportCustomTag3": [
-      "&8[&b&6u/&bRayDeeUx&8]",
-      "&8[&b&6u/&bRayDeeUx&8]"
-    ],
+    "HellCastleSupportCustomTag3": ["&8[&b&6u/&bRayDeeUx&8]", "&8[&b&6u/&bRayDeeUx&8]"],
     "HellCastleSupportCustomTag4": ["&8[&aS&2t&eo&6n&9k&8]", "&8[&2$$$&8]"],
-    "HellCastleSupportCustomTagFeel": [
-      "&c[AMON&fGU&cS] super sus",
-      "&cSussy"
-    ],
+    "HellCastleSupportCustomTagFeel": ["&c[AMON&fGU&cS] super sus", "&cSussy"],
     "HellCastleSupportCustomTagSans": ["§r§9Party §8> §6", "§r§9Party §8> §6"],
     "wyvest": ["&5[WWWWWWWWW]&r", "&5[Wyvest]&r"],
     "kti": ["&9&Z[skyclient dev]&r", "&9&Z[SC dev]&r"],
     "alfredo": ["&7[Alfredo cuz my friend is eating it]&r", "&7[Alfredo]&r"],
     "Maya": ["&8[&dCutie&8]", "&8[&5Maya&8]"],
     "Zetvue": ["&8[&c♫i make music♫&8]&r", "&8[&cZetvue&8]&r"],
-    "Shinya": ["&6[OmegaWeeb&0++&6]&r","&6[Weeb&0++&6]&r"]
+    "Shinya": ["&6[OmegaWeeb&0++&6]&r", "&6[Weeb&0++&6]&r"]
   },
   "perms": {
     "cringe": ["ffe0706ebdb24557930b9aa2d10bc383"],

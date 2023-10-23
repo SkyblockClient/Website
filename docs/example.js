@@ -1,3 +1,4 @@
+import Mustache from "mustache";
 class TemplateExample extends HTMLElement {
   connectedCallback() {
     // Store the content of me and hide myself.
