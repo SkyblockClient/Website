@@ -5,6 +5,7 @@
 }
 :root {
   color-scheme: dark;
+  accent-color: #8ff03f;
 }
 @tailwind base;
 @tailwind components;
