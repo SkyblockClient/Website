@@ -356,9 +356,8 @@
         ),
         fetch("https://api.github.com/repos/SkyblockClient/Skyclient-installer-Java/releases").then(
           (r) => r.json(),
-     fetch("https://api.github.com/repos/KTibow/Mart/releases").then(
-          (r) => r.json(),
         ),
+        fetch("https://api.github.com/repos/KTibow/Mart/releases").then((r) => r.json()),
       ]).then(async (responses) => {
         const getCount = (json) => {
           const artifact = json[0].assets[0];
