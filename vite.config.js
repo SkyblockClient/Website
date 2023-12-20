@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import { minify } from "html-minifier-terser";
 
 export default defineConfig({
   appType: "mpa",
@@ -15,4 +16,16 @@ export default defineConfig({
       },
     },
   },
+  plugins: [
+    {
+      name: "minify-html",
+      transformIndexHtml: {
+        handler(html, ctx) {
+          return minify(html, {
+            collapseWhitespace: true,
+          });
+        },
+      },
+    },
+  ],
 });

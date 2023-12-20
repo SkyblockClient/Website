@@ -5,6 +5,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
     "mustache": "^4.2.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
