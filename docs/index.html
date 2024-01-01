@@ -53,7 +53,7 @@
             />
           </svg>
           <p>Safe. Rated 4.54/5 on Discord.</p>
-          <p>Latest versions downloaded <span id="template-versions">...</span> times.</p>
+          <p>Skyclient has been downloaded <span id="template-versions">...</span> times.</p>
         </div>
       </div>
       <div
@@ -363,13 +363,15 @@
         ),
         fetch("https://api.github.com/repos/KTibow/Mart/releases").then((r) => r.json()),
       ]).then(async (responses) => {
-        const getCount = (json) => {
-          const artifact = json[0].assets[0];
-          if (!artifact) return 0;
-          return artifact.download_count;
-        };
-        const count = getCount(responses[0]) + getCount(responses[1]) + getCount(responses[2]);
-        document.getElementById("template-versions").innerText = count;
+        let count = 0;
+        for (const repo of responses) {
+          for (const release of repo) {
+            const artifact = release.assets[0];
+            if (!artifact) continue;
+            count += artifact.download_count;
+          }
+        }
+        document.getElementById("template-versions").innerText = count.toLocaleString();
       });
     </script>
   </body>
