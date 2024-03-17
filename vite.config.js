@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, "docs", "index.html"),
         backport: resolve(__dirname, "docs", "backport", "index.html"),
+        404: resolve(__dirname, "docs", "404.html"),
       },
     },
   },

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        font-family: Inter;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgb(17 20 15);
+        color: rgb(225 228 217);
+        margin: 0;
+        height: 100dvh;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: 6rem;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        overflow: hidden;
+
+        color: rgb(45 79 28);
+        white-space: nowrap;
+        line-height: 1;
+      }
+      .row {
+        display: flex;
+        gap: 1em;
+        animation: marquee 1800s linear infinite;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(calc(var(--offset)));
+        }
+        100% {
+          transform: translateX(calc(var(--offset) - 400000px));
+        }
+      }
+    </style>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <title>404</title>
+  </head>
+  <body>
+    <h1>404</h1>
+    <script type="module" src="404.js"></script>
+  </body>
+</html>
