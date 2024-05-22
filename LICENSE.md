@@ -1,4 +1,4 @@
-© Kendell R (@KTibow) 2022
+© SkyClient (SkyblockClient) 2024
 
 MIT License
 
