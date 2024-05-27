@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Download Skyclient, the automatic asset installer for Minecraft, made for playing on Hypixel."
+      content="Download SkyClient, the automatic asset installer for Minecraft, made for playing on Hypixel."
     />
-    <meta property="og:title" content="Skyclient" />
+    <meta property="og:title" content="SkyClient" />
     <meta
       property="og:description"
-      content="Download Skyclient, the automatic asset installer for Minecraft, made for playing on Hypixel."
+      content="Download SkyClient, the automatic asset installer for Minecraft, made for playing on Hypixel."
     />
     <meta property="og:image" content="/assets/Skyclient.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
     />
     <link rel="stylesheet" href="./base.css" />
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
-    <title>Skyclient</title>
+    <title>SkyClient</title>
   </head>
   <body
     class="bg-background bg-[url(./assets/layered-waves-haikei.svg)] bg-[length:150%] bg-no-repeat p-8 text-on-background"
@@ -36,7 +36,7 @@
     </a>
     <div class="mb-12 flex gap-8 lg:mb-20">
       <div class="flex flex-1 flex-col rounded-8 bg-surface-container-low p-8 sm:p-12">
-        <h1 class="mb-8 text-6xl lg:text-8xl">Skyclient</h1>
+        <h1 class="mb-8 text-6xl lg:text-8xl">SkyClient</h1>
         <p class="lg:text-2xl">
           An open installer to help you get all of the assets you need for Hypixel.
         </p>
@@ -53,16 +53,16 @@
             />
           </svg>
           <p>Safe. Rated 4.54/5 on Discord.</p>
-          <p>Skyclient has been downloaded <span id="template-versions">...</span> times.</p>
+          <p>SkyClient has been downloaded <span id="template-versions">...</span> times.</p>
         </div>
       </div>
       <div
         class="hidden flex-1 items-center justify-center rounded-8 bg-surface-container-low p-12 lg:flex"
       >
-        <img class="aspect-square max-w-sm" src="/assets/Skyclient.svg" alt="Skyclient logo" />
+        <img class="aspect-square max-w-sm" src="/assets/Skyclient.svg" alt="SkyClient logo" />
       </div>
     </div>
-    <h2 class="mb-8 text-4xl lg:text-6xl">Use Skyclient</h2>
+    <h2 class="mb-8 text-4xl lg:text-6xl">Use SkyClient</h2>
     <ol class="mb-12 flex flex-col gap-4 lg:mb-20">
       <li class="grid grid-cols-[auto_1fr] gap-8 gap-y-4">
         <span
@@ -113,7 +113,7 @@
               </div>
             </a>
             <a
-              href="https://github.com/SkyblockClient/Skyclient-installer-Java/releases/latest"
+              href="https://github.com/SkyblockClient/SkyClient-installer-Java/releases/latest"
               class="flex max-w-xs flex-1 flex-col gap-2"
             >
               <img
@@ -153,7 +153,7 @@
         >
           2
         </span>
-        <p class="pt-2 text-2xl font-bold">Open Skyclient and choose your mods</p>
+        <p class="pt-2 text-2xl font-bold">Open SkyClient and choose your mods</p>
       </li>
       <li class="grid grid-cols-[auto_1fr] gap-8">
         <span
@@ -161,7 +161,7 @@
         >
           3
         </span>
-        <p class="pt-2 text-2xl font-bold">Skyclient installs itself</p>
+        <p class="pt-2 text-2xl font-bold">SkyClient installs itself</p>
       </li>
       <li class="grid grid-cols-[auto_1fr] gap-8 gap-y-4">
         <span
@@ -169,9 +169,9 @@
         >
           4
         </span>
-        <p class="pt-2 text-2xl font-bold">Launch Skyclient!</p>
+        <p class="pt-2 text-2xl font-bold">Launch SkyClient!</p>
         <p class="col-start-2">
-          Launch your Skyclient installation with your launcher of choice. We try to auto-install to
+          Launch your SkyClient installation with your launcher of choice. We try to auto-install to
           the Minecraft launcher.
         </p>
       </li>
@@ -200,7 +200,7 @@
           </a>
         </div>
         <p>
-          All of Skyclient is open source. Under the SkyblockClient GitHub organization, you'll find
+          All of SkyClient is open source. Under the SkyblockClient GitHub organization, you'll find
           almost all of the code.
         </p>
       </div>
@@ -226,14 +226,14 @@
           </a>
         </div>
         <p>
-          Join the Skyclient Discord to chat, get support, and more. (Use the link inv.wtf/skyclient
+          Join the SkyClient Discord to chat, get support, and more. (Use the link inv.wtf/skyclient
           to join, others may be a scam.)
         </p>
       </div>
       <div class="flex flex-1 flex-col gap-2 rounded-6 bg-surface-container-low p-4">
         <div>Open to be modified</div>
         <p>
-          The goal of Skyclient is to make a Forge installation with mods. Once it's installed, you
+          The goal of SkyClient is to make a Forge installation with mods. Once it's installed, you
           can change it as much as you want.
         </p>
       </div>
@@ -346,7 +346,7 @@
       const downloadText = document.getElementById("template-recommended-text");
       if (navigator.platform.includes("Linux") || navigator.platform.includes("Mac")) {
         downloadLink.href =
-          "https://github.com/SkyblockClient/Skyclient-installer-Java/releases/latest";
+          "https://github.com/SkyblockClient/SkyClient-installer-Java/releases/latest";
         downloadLink.style.display = "flex";
         downloadText.innerText = "Java";
       } else if (navigator.platform.includes("Win")) {
@@ -361,7 +361,7 @@
         fetch("https://api.github.com/repos/SkyblockClient/SkyClient-Installer-Windows/releases").then((r) =>
           r.json(),
         ),
-        fetch("https://api.github.com/repos/SkyblockClient/Skyclient-installer-Java/releases").then(
+        fetch("https://api.github.com/repos/SkyblockClient/SkyClient-installer-Java/releases").then(
           (r) => r.json(),
         ),
         fetch("https://api.github.com/repos/SkyblockClient/Mart/releases").then((r) => r.json()),
