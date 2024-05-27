@@ -129,7 +129,7 @@
               </div>
             </a>
             <a
-              href="https://ktibow.github.io/Mart/"
+              href="https://mart.skyclient.co/"
               class="flex max-w-xs flex-1 flex-col gap-2"
             >
               <img
@@ -364,7 +364,7 @@
         fetch("https://api.github.com/repos/SkyblockClient/Skyclient-installer-Java/releases").then(
           (r) => r.json(),
         ),
-        fetch("https://api.github.com/repos/KTibow/Mart/releases").then((r) => r.json()),
+        fetch("https://api.github.com/repos/SkyblockClient/Mart/releases").then((r) => r.json()),
       ]).then(async (responses) => {
         let count = 0;
         for (const repo of responses) {
