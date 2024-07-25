@@ -1,15 +1,14 @@
 {
   "tags": {
     "cringe": [
-      "&3[&2Please help me i cant code and this is torture&3]",
+      "&3[&2Cringe&3]",
       "&3[&2Cringe&3]"
     ],
-    "Owner": ["§1[§5OWNER§1]", "§1[§5OWNER§1]"],
     "Booster": ["&5[&dBooster&5]", "&5[&dB&5]"],
     "ResourceCreator": ["&1[&9Resource Creator&1]", "&1[&9RC&1]"],
     "cool": ["&9[&5Cool&9]", "&9[&5C&9]"],
     "nacrt": ["&a[nacrt]", "&a[nacrt]"],
-    "micro": ["&b[&dAnime &9Girl &3Enthusiast&b]", "&b[&6Weeb&b]"],
+    "micro": ["&b[&6Weeb&b]", "&b[&6Weeb&b]"],
     "lisena": ["&6[&2Pirate Queen&6]", "&6[&2Pirate&6]"],
     "juni": ["&d[&2Bird Manager&d]", "&d[&2birb&d]"],
     "brian": ["&4[&cBrian&4]", "&4[&cBrian&4]"],
@@ -26,16 +25,15 @@
       "§r§9Party §8> §6",
       "§r§9Party §8> §6"
     ],
-    "wyvest": ["&5[WWWWWWWWW]&r", "&5[Wyvest]&r"],
+    "wyvest": ["&5[Wyvest]&r", "&5[Wyvest]&r"],
     "kti": ["&9&Z[skyclient dev]&r", "&9&Z[SC dev]&r"],
-    "alfredo": ["&7[Alfredo cuz my friend is eating it]&r", "&7[Alfredo]&r"],
+    "alfredo": ["&7[Alfredo]&r", "&7[Alfredo]&r"],
     "Maya": ["&8[&dCutie&8]", "&8[&5Maya&8]"],
     "Zetvue": ["&8[&c♫i make music♫&8]&r", "&8[&cZetvue&8]&r"],
     "Shinya": ["&6[OmegaWeeb&0++&6]&r", "&6[Weeb&0++&6]&r"]
   },
   "perms": {
     "cringe": ["ffe0706ebdb24557930b9aa2d10bc383"],
-    "Owner": ["a3116b07f66947a8b1ddbdb2ae974ef0"],
     "Booster": [
       "181b9c3fe2cb46a8aa7fbd42f0cb667a",
       "545a3887b68e410fb1eeb57f689c6c76",
