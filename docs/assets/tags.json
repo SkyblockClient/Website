@@ -1,9 +1,6 @@
 {
   "tags": {
-    "cringe": [
-      "&3[&2Cringe&3]",
-      "&3[&2Cringe&3]"
-    ],
+    "cringe": ["&3[&2Cringe&3]", "&3[&2Cringe&3]"],
     "Booster": ["&5[&dBooster&5]", "&5[&dB&5]"],
     "ResourceCreator": ["&1[&9Resource Creator&1]", "&1[&9RC&1]"],
     "cool": ["&9[&5Cool&9]", "&9[&5C&9]"],
@@ -35,6 +32,7 @@
     "cringe": ["ffe0706ebdb24557930b9aa2d10bc383"],
     "Booster": [
       "181b9c3fe2cb46a8aa7fbd42f0cb667a",
+      "456f94a47b9348f59716001614222f35",
       "545a3887b68e410fb1eeb57f689c6c76",
       "594ff19b172045bf9bebd75530273b85",
       "8bd700b5cd3a4700821d5f001994f0ea",
