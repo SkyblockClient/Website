@@ -6,6 +6,7 @@
     "cool": ["&9[&5Cool&9]", "&9[&5C&9]"],
     "nacrt": ["&a[nacrt]", "&a[nacrt]"],
     "micro": ["&b[&6Weeb&b]", "&b[&6Weeb&b]"],
+    "rayless": ["§1[§5Rayless§1]", "§1[§5ray§1]"],
     "juni": ["&d[&2Bird Manager&d]", "&d[&2birb&d]"],
     "brian": ["&4[&cBrian&4]", "&4[&cBrian&4]"],
     "HellCastleSupport": ["&8[&4Hell&fCastle&8]", "&8[&4H&fC&8]"],
@@ -30,6 +31,7 @@
   },
   "perms": {
     "cringe": ["ffe0706ebdb24557930b9aa2d10bc383"],
+    "rayless": ["a3116b07f66947a8b1ddbdb2ae974ef0"],
     "Booster": [
       "181b9c3fe2cb46a8aa7fbd42f0cb667a",
       "33a2902e5f314c53ac4e085086a4ef28",
