@@ -78,7 +78,20 @@
     "alfredo": ["2d06ec72e7234a8ba0aafaf6ab6b9934"],
     "Maya": ["a1732122e22e4edf883c09673eb55de8"],
     "Zetvue": ["9a23f6435e334101a5f2d63f248b49c2"],
-    "Shinya": ["cb022c43431648f99d65d485c2f655bf"]
+    "Shinya": ["cb022c43431648f99d65d485c2f655bf"],
+    "Booster": [
+      "02a5344bf7324c419fc4d2c40c333273",
+      "181b9c3fe2cb46a8aa7fbd42f0cb667a",
+      "545a3887b68e410fb1eeb57f689c6c76",
+      "6e87c063c3e64e5787d70b12f0fd3fe3",
+      "7cc640ca70274378a35774c70d304725",
+      "8bd700b5cd3a4700821d5f001994f0ea",
+      "a5a770aad143479488318190762386c8",
+      "add71246c46e455c8345c129ea6f146c",
+      "ba009eda35fc47f48d475169ca33fe0e",
+      "c0c40a80887947dea2f82697ca8a3975",
+      "f36660dccda34416ac36c2188a79e685"
+    ]
   },
   "whitelist": false,
   "whitelisted": [
