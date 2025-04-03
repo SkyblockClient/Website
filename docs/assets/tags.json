@@ -27,7 +27,8 @@
     "alfredo": ["&7[Alfredo]&r", "&7[Alfredo]&r"],
     "Maya": ["&8[&dCutie&8]", "&8[&5Maya&8]"],
     "Zetvue": ["&8[&c♫i make music♫&8]&r", "&8[&cZetvue&8]&r"],
-    "Shinya": ["&6[OmegaWeeb&0++&6]&r", "&6[Weeb&0++&6]&r"]
+    "Shinya": ["&6[OmegaWeeb&0++&6]&r", "&6[Weeb&0++&6]&r"],
+    "punchingBag": ["&d[&bpunching bag&d]","&d[&bPB&d]"]
   },
   "perms": {
     "cringe": ["ffe0706ebdb24557930b9aa2d10bc383"],
@@ -40,7 +41,6 @@
       "8bd700b5cd3a4700821d5f001994f0ea",
       "93289b2fbab94afdb9a7a696f304f68c",
       "a5a770aad143479488318190762386c8",
-      "add71246c46e455c8345c129ea6f146c",
       "ba009eda35fc47f48d475169ca33fe0e",
       "c0c40a80887947dea2f82697ca8a3975",
       "eaa0dafc3fb04355832988d6602aca95",
@@ -79,7 +79,8 @@
     "alfredo": ["2d06ec72e7234a8ba0aafaf6ab6b9934"],
     "Maya": ["a1732122e22e4edf883c09673eb55de8"],
     "Zetvue": ["9a23f6435e334101a5f2d63f248b49c2"],
-    "Shinya": ["cb022c43431648f99d65d485c2f655bf"]
+    "Shinya": ["cb022c43431648f99d65d485c2f655bf"],
+    "punchingBag": ["add71246c46e455c8345c129ea6f146c", "7301afb195ac4f35907d8a2d88ee8885"]
   },
   "whitelist": false,
   "whitelisted": [
