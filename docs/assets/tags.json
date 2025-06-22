@@ -29,6 +29,7 @@
     "Zetvue": ["&8[&c♫i make music♫&8]&r", "&8[&cZetvue&8]&r"],
     "Shinya": ["&6[OmegaWeeb&0++&6]&r", "&6[Weeb&0++&6]&r"],
     "punchingBag": ["&d[&bpunching bag&d]", "&d[&bPB&d]"]
+    "Tryfle": ["&d[&fSylveon&d]", "&d[&fSylveon&d]"]
   },
   "perms": {
     "cringe": ["ffe0706ebdb24557930b9aa2d10bc383"],
@@ -82,7 +83,8 @@
     "punchingBag": [
       "add71246c46e455c8345c129ea6f146c",
       "7301afb195ac4f35907d8a2d88ee8885"
-    ]
+    ],
+    "Tryfle": ["84fe1904-5b9e-4272-82fc-1459f75be1ec"]
   },
   "whitelist": false,
   "whitelisted": [
