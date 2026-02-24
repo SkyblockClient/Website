@@ -34,6 +34,103 @@
     <a id="backportAlt" href="/backport/" style="display: none">
       Are you on an old browser? Click to view a version of this site that renders.
     </a>
+    <div
+      id="oneclient-popup"
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+    >
+      <div
+        class="max-h-[92vh] w-full max-w-4xl overflow-hidden rounded-6 border border-surface-container-high bg-surface-container-low shadow-2xl"
+      >
+        <div class="max-h-[92vh] overflow-y-auto p-4 sm:p-8">
+          <h2 class="text-3xl font-bold sm:text-5xl">SkyClient is moving to OneClient</h2>
+          <div class="my-4 h-px bg-surface-container-high"></div>
+          <p class="text-base text-on-background opacity-80 sm:text-lg">
+            Starting from February 24th, 2026 (<span id="oneclient-days-text">today</span>), Hypixel
+            SkyBlock will be removing 1.8 support. As a result, we are ending support for SkyClient.
+          </p>
+          <p class="mt-4 text-lg font-semibold sm:text-2xl">
+            We have been developing OneClient, the 1.21 version of SkyClient with its own launcher
+            and updated to the latest mods. We recommend trying it as it is the closest thing now to
+            SkyClient and made by the same team.
+          </p>
+          <div class="mt-6">
+            <div class="relative overflow-hidden rounded-4 bg-background">
+              <img
+                id="oneclient-carousel-image"
+                src="/assets/oneclient1.jpg"
+                alt="OneClient preview"
+                class="w-full"
+              />
+              <button
+                id="oneclient-carousel-prev"
+                type="button"
+                class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 px-3 py-1 text-2xl text-white transition hover:bg-black/60"
+                aria-label="Previous OneClient image"
+              >
+                &lt;
+              </button>
+              <button
+                id="oneclient-carousel-next"
+                type="button"
+                class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 px-3 py-1 text-2xl text-white transition hover:bg-black/60"
+                aria-label="Next OneClient image"
+              >
+                &gt;
+              </button>
+            </div>
+            <div class="mt-3 flex justify-center gap-3">
+              <button
+                type="button"
+                data-oneclient-slide="0"
+                class="h-2.5 w-2.5 rounded-full bg-on-background opacity-100"
+                aria-label="Show OneClient image 1"
+              ></button>
+              <button
+                type="button"
+                data-oneclient-slide="1"
+                class="h-2.5 w-2.5 rounded-full bg-on-background opacity-30"
+                aria-label="Show OneClient image 2"
+              ></button>
+              <button
+                type="button"
+                data-oneclient-slide="2"
+                class="h-2.5 w-2.5 rounded-full bg-on-background opacity-30"
+                aria-label="Show OneClient image 3"
+              ></button>
+            </div>
+          </div>
+          <div class="mt-6 flex flex-col gap-3">
+            <a
+              href="https://polyfrost.org/projects/oneclient"
+              class="w-full rounded-2 bg-primary px-4 py-3 text-center text-lg font-bold text-on-primary transition hover:brightness-110"
+            >
+              Download OneClient
+            </a>
+            <div class="grid grid-cols-2 gap-3">
+              <a
+                href="https://discord.gg/polyfrost"
+                class="rounded-2 bg-surface-container-high px-4 py-3 text-center font-bold transition hover:brightness-110"
+              >
+                Discord
+              </a>
+              <a
+                href="https://polyfrost.org/blog/oneclient-announcement"
+                class="rounded-2 bg-surface-container-high px-4 py-3 text-center font-bold transition hover:brightness-110"
+              >
+                FAQ
+              </a>
+            </div>
+            <button
+              id="oneclient-dismiss"
+              type="button"
+              class="rounded-2 bg-surface-container-high px-4 py-3 text-center font-medium text-on-background opacity-80 transition hover:brightness-110"
+            >
+              Continue using SkyClient
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="mb-12 flex gap-8 lg:mb-20">
       <div class="flex flex-1 flex-col rounded-8 bg-surface-container-low p-8 sm:p-12">
         <h1 class="mb-8 text-6xl lg:text-8xl">SkyClient</h1>
@@ -342,6 +439,94 @@
       }
     </script>
     <script>
+      const oneClientPopup = document.getElementById("oneclient-popup");
+      const oneClientDaysText = document.getElementById("oneclient-days-text");
+      const oneClientDismissButton = document.getElementById("oneclient-dismiss");
+      const oneClientCarouselImage = document.getElementById("oneclient-carousel-image");
+      const oneClientCarouselPrev = document.getElementById("oneclient-carousel-prev");
+      const oneClientCarouselNext = document.getElementById("oneclient-carousel-next");
+      const oneClientCarouselDots = Array.from(document.querySelectorAll("[data-oneclient-slide]"));
+      const oneClientCarouselImages = [
+        "/assets/oneclient1.jpg",
+        "/assets/oneclient2.jpg",
+        "/assets/oneclient3.jpg",
+      ];
+      let oneClientCurrentSlide = 0;
+      let oneClientCarouselIntervalId = null;
+
+      const endOfSupportDate = new Date(2026, 1, 24);
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const daysDiff = Math.round((today - endOfSupportDate) / (1000 * 60 * 60 * 24));
+      if (daysDiff > 0) {
+        oneClientDaysText.innerText = `${daysDiff} days ago`;
+      } else if (daysDiff === 0) {
+        oneClientDaysText.innerText = "today";
+      } else {
+        oneClientDaysText.innerText = `in ${Math.abs(daysDiff)} days`;
+      }
+
+      const renderOneClientSlide = () => {
+        oneClientCarouselImage.src = oneClientCarouselImages[oneClientCurrentSlide];
+        for (const [index, dot] of oneClientCarouselDots.entries()) {
+          dot.classList.toggle("opacity-100", index === oneClientCurrentSlide);
+          dot.classList.toggle("opacity-30", index !== oneClientCurrentSlide);
+        }
+      };
+
+      const setOneClientSlide = (nextSlide) => {
+        const slideCount = oneClientCarouselImages.length;
+        oneClientCurrentSlide = ((nextSlide % slideCount) + slideCount) % slideCount;
+        renderOneClientSlide();
+      };
+
+      const restartOneClientCarousel = () => {
+        if (oneClientCarouselIntervalId) {
+          clearInterval(oneClientCarouselIntervalId);
+        }
+        oneClientCarouselIntervalId = setInterval(() => {
+          setOneClientSlide(oneClientCurrentSlide + 1);
+        }, 5000);
+      };
+
+      const closeOneClientPopup = () => {
+        if (!oneClientPopup || oneClientPopup.classList.contains("hidden")) {
+          return;
+        }
+        oneClientPopup.classList.add("hidden");
+        document.body.style.removeProperty("overflow");
+        if (oneClientCarouselIntervalId) {
+          clearInterval(oneClientCarouselIntervalId);
+          oneClientCarouselIntervalId = null;
+        }
+      };
+
+      document.body.style.overflow = "hidden";
+      renderOneClientSlide();
+      restartOneClientCarousel();
+
+      oneClientCarouselPrev.addEventListener("click", () => {
+        setOneClientSlide(oneClientCurrentSlide - 1);
+        restartOneClientCarousel();
+      });
+      oneClientCarouselNext.addEventListener("click", () => {
+        setOneClientSlide(oneClientCurrentSlide + 1);
+        restartOneClientCarousel();
+      });
+      for (const dot of oneClientCarouselDots) {
+        dot.addEventListener("click", () => {
+          const nextSlide = Number(dot.dataset.oneclientSlide);
+          setOneClientSlide(nextSlide);
+          restartOneClientCarousel();
+        });
+      }
+      oneClientDismissButton.addEventListener("click", closeOneClientPopup);
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeOneClientPopup();
+        }
+      });
+
       const downloadLink = document.getElementById("template-recommended-link");
       const downloadText = document.getElementById("template-recommended-text");
       if (navigator.platform.includes("Linux") || navigator.platform.includes("Mac")) {
